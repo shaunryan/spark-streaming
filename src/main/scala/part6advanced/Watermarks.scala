@@ -16,6 +16,7 @@ object Watermarks {
     .master("local[2]")
     .getOrCreate()
 
+  spark.sparkContext.setLogLevel("ERROR")
   // 3000,blue
 
   import spark.implicits._
@@ -140,7 +141,7 @@ object DataSender {
   }
 
   def main(args: Array[String]): Unit = {
-    example3()
+    example1()
   }
 }
 
