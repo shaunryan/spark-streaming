@@ -4,7 +4,7 @@ version := "0.1"
 
 scalaVersion := "2.12.10"
 
-val sparkVersion = "3.0.2"
+val sparkVersion = "3.2.0"
 val postgresVersion = "42.2.2"
 val cassandraConnectorVersion = "3.0.0" // preview version at the moment of writing (July 7, 2020)
 val akkaVersion = "2.5.24"
@@ -15,7 +15,7 @@ val log4jVersion = "2.4.1"
 val nlpLibVersion = "3.5.1"
 
 resolvers ++= Seq(
-  "bintray-spark-packages" at "https://dl.bintray.com/spark-packages/maven",
+  "bintray-spark-packages" at "https://repos.spark-packages.org",
   "Typesafe Simple Repository" at "https://repo.typesafe.com/typesafe/simple/maven-releases",
   "MavenRepository" at "https://mvnrepository.com"
 )
